@@ -1,0 +1,15 @@
+# Java
+*.class
+*.jar
+*.war
+*.iml
+target/
+out/
+
+# Node
+node_modules/
+dist/
+.env
+
+# OS
+.DS_Store
