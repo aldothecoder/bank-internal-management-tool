@@ -1,0 +1,155 @@
+/* Base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1,
+h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* Inputs */
+input,
+select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Cards for each request */
+.request-card {
+  background-color: #f9fafb;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.request-row {
+  display: flex; /* horizontal layout */
+  gap: 20px; /* space between each field */
+  align-items: center; /* vertically align text if needed */
+  margin-bottom: 10px; /* space between rows */
+  border-bottom: 1px solid #ccc; /* horizontal line between entries */
+}
+
+.request-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Status badges */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.status.Pending {
+  background-color: #f59e0b;
+}
+
+.status.Approved {
+  background-color: #10b981;
+}
+
+.status.Denied {
+  background-color: #ef4444;
+}
+
+/* Form sections */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
